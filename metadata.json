@@ -1,0 +1,6 @@
+{
+  "name": "Studio Nocturne — Invitación Digital Gala de Solsticio",
+  "description": "Experiencia interactiva de correspondencia de lujo con unboxing 3D de sobre con sello de lacre, scroll reveal guiado y confirmación RSVP fluida a 60fps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
