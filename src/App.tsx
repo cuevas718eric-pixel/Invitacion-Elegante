@@ -534,23 +534,12 @@ END:VCALENDAR`;
               transition: 'opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1)',
             }}
           >
-            {/* Phone Bezel Header: Speaker, Time, Notch, Battery */}
-            <div className="absolute top-0 left-0 right-0 h-8 z-40 flex items-center justify-between px-7 pointer-events-none bg-gradient-to-b from-black/90 to-transparent">
-              <span className="text-[10px] font-medium text-stone-400 tracking-tight">20:45</span>
-              <div className="w-20 h-4 bg-black rounded-full flex items-center justify-center gap-1.5 border border-white/5">
-                <div className="w-2 h-2 rounded-full bg-stone-900 border border-stone-700"></div>
-                <div className="w-1.5 h-1.5 rounded-full bg-[#1c2a38]"></div>
-              </div>
-              <div className="flex items-center gap-1.5 text-[10px] text-stone-400">
-                <Wifi className="w-3 h-3 text-stone-400" />
-                <BatteryCharging className="w-3.5 h-3.5 text-[#e5c378]" />
-              </div>
-            </div>
+            {/* Barra de estado eliminada de este contenedor */}
 
             {/* Reading Progress Bar */}
             <div
               id="read-progress"
-              className="absolute top-8 left-0 h-[2.5px] bg-gradient-to-r from-[#b89344] via-[#e5c378] to-[#fcedc5] z-40 transition-all duration-150 shadow-[0_0_8px_rgba(229,195,120,0.6)]"
+              className="absolute top-0 left-0 h-[2.5px] bg-gradient-to-r from-[#b89344] via-[#e5c378] to-[#fcedc5] z-40 transition-all duration-150 shadow-[0_0_8px_rgba(229,195,120,0.6)]"
               style={{ width: `${scrollProgress}%` }}
               role="progressbar"
               aria-valuenow={Math.round(scrollProgress)}
@@ -564,7 +553,7 @@ END:VCALENDAR`;
               id="invitation-scrollable-strip"
               ref={scrollContainerRef}
               onScroll={handleScroll}
-              className="w-full h-full overflow-y-auto no-scrollbar pt-10 pb-16 px-6 bg-paper-texture scroll-smooth"
+              className="w-full h-full overflow-y-auto no-scrollbar pt-4 pb-16 px-6 bg-paper-texture scroll-smooth"
             >
               {/* SECCIÓN 1: Cabecera Hero con Monograma & Titular */}
               <section className="reveal-on-scroll is-visible text-center pt-8 pb-10 flex flex-col items-center border-b border-[#e5c378]/15 relative">
